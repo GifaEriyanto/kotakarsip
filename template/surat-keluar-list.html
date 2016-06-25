@@ -1,0 +1,315 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+	<meta name="keyword" content="">
+
+	<meta name="description" content="">
+
+	<meta name="author" content="">
+
+	<meta property="og:image" content="assets/img/logo.svg" />
+
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Kotakarsip</title>
+
+	<link rel="icon" sizes="16x16" href="assets/img/favicon.png" />
+
+	<!-- Font Icon -->
+	<link rel="stylesheet" href="assets/libs/font-icons/entypo/css/entypo.css">
+	<link rel="stylesheet" href="assets/libs/font-icons/font-awesome/css/font-awesome.min.css">
+
+	<!-- Font -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400' rel='stylesheet' type='text/css'>
+	
+	<!-- Libs css -->
+	<link rel="stylesheet" href="assets/libs/jquery-ui/jquery-ui.css">
+	<link href="assets/libs/sumoselect/sumoselect.css" rel="stylesheet" />
+	<link href="assets/libs/bootstrap-switch-master/dist/css/bootstrap3/bootstrap-switch.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/libs/datepick/jquery.datepick.css">
+
+	<!-- Custom css -->
+	<link href="assets/css/kotakarsip.css" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+<div id="container">
+
+	<div class="profil-responsive">
+		<ul>
+			<li class="user-thumbs"><img src="assets/img/user/user-thumbs.png" alt="" width="28px"><span>&nbsp;&nbsp;Gifa Eriyanto&nbsp;&nbsp;</span></li>
+			<li><a href="setelan.html"><i class="fa fa-cog"></i>&nbsp;&nbsp;Setelan</a></li>
+			<li><a href="login.html"><i class="fa fa-power-off"></i>&nbsp;&nbsp;Keluar</a></li>
+		</ul>
+	</div>
+
+	<div class="overlay-profil-responsive"></div>
+
+	<nav>
+
+		<div class="container">
+		
+			<div class="pull-left logo"><a href="index.html"><img src="assets/img/logo.svg" alt="" width="26px"><b>KOTAK ARSIP</b></a></div>
+
+			<div class="pull-right top-responsive">
+				<a href="#" class="show-profil-responsive"><i class="fa fa-bars"></i></a>
+			</div>
+
+
+			<div class="pull-right" style="height: 50px;">
+				<ul class="link">
+					<li class="dropdown hide-dropdown">
+						<button class="btn dropdown-custom dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+							<img src="assets/img/user/user-thumbs.png" alt="" width="28px">
+							<span>&nbsp;&nbsp;Gifa Eriyanto&nbsp;&nbsp;</span>
+							<i class="fa fa-angle-down"></i>
+						</button>
+						<ul class="dropdown-menu  pull-right" role="menu" aria-labelledby="dropdownMenu1" style="right: 4px;">
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="pengaturan-akun.html"><i class="fa fa-cog"></i>&nbsp;&nbsp;Pengaturan Akun</a></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="login.html"><i class="fa fa-power-off"></i>&nbsp;&nbsp;Keluar</a></li>
+						</ul>
+					</li>
+
+					<li class="dropdown">
+						<button class="btn dropdown-custom dropdown-toggle badge-active" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+							<i class="fa fa-bell"><div class="badge-on"></div></i>
+						</button>
+						<ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dropdownMenu1" style="right: 4px;max-width: 400px;">
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="#" class="ellipsis"><i class="fa fa-file-text"></i>&nbsp;&nbsp;<b>Alfian</b> menambahkan dokumen baru</a></li>
+							<li role="presentation"><div style="width: 100%;height: 1px;background: #202020"></div></li>
+							<li role="presentation"><a role="menuitem" tabindex="-1" href="pemberitahuan.html"><center>Selengkapnya</center></a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+
+	</nav>
+
+	<div class="nav">
+		
+		<div class="container">
+			
+			<ul class="link pull-left">
+				<li><a class="list" href="index.html">BERANDA</a></li>
+				<li><a class="list" href="surat-masuk.html">SURAT MASUK</a></li>
+				<li class="actived"><a class="list" href="surat-keluar.html">SURAT KELUAR</a></li>
+			</ul>
+
+
+			<ul class="link pull-right">
+				<li id="nav-master"><a class="list" href="master.html"><i class="fa fa-plus"></i></a></li>
+			</ul>
+
+		</div>
+
+	</div>
+
+	<div id="body">
+
+		<section class="container main-section">
+
+			<form action="" class="form-custom row">
+				
+				<div class="col-md-2">
+					<select name="lemari" multiple="multiple" placeholder="Pilih Lemari" onchange="console.log($(this).children(':selected').length)" class="testsel">
+						<option value="Lemari 1">Lemari 1</option>
+						<option value="Lemari 2">Lemari 2</option>
+						<option value="Lemari 3">Lemari 3</option>
+					</select>
+				</div>
+
+				<div class="col-md-2">
+					<select name="rak" multiple="multiple" placeholder="Pilih Rak" onchange="console.log($(this).children(':selected').length)" class="testsel" disabled>
+						<option value="Rak 1">Rak 1</option>
+						<option value="Rak 2">Rak 2</option>
+						<option value="Rak 3">Rak 3</option>
+					</select>
+				</div>
+
+				<div class="col-md-4">
+					<input type="text" id="rangePicker" placeholder="Rentang Waktu" readonly>
+				</div>
+
+				<div class="col-md-4">
+					<input type="text" placeholder="Pencarian">
+					<button class="btn-search"><i class="fa fa-search"></i></button>
+				</div>
+
+			</form>
+
+		</section>
+
+
+
+
+		<section class="container default-section">
+
+			<div class="bread">
+				<a href="index.html">Beranda</a> <i class="fa fa-angle-right"></i> <b>Surat Keluar</b>
+				<span class="display">
+					<a href="surat-keluar.html"><i class="fa fa-th"></i></a>
+					&nbsp;&nbsp;&nbsp;
+					<a href="surat-keluar-list.html" class="active"><i class="fa fa-list"></i></a>
+				</span>
+			</div>
+
+			<div class="row" style="margin-top: 10px">
+				<div class="col-md-4">
+					<input type="text" placeholder="Pencarian" class="search-2">
+				</div>
+				<div class="col-md-8">
+					<a href="tambah-surat-keluar.html" class="btn-icon btn-icon-info pull-right add-large"><i class="fa fa-plus"></i>Tambah baru</a>
+					<a href="javascript: w=window.open('cetak-surat-keluar.html'); w.print();" class="btn-icon btn-icon-orange pull-right"><i class="fa fa-print"></i>Cetak Laporan</a>
+					<a href="" class="btn-icon btn-icon-success pull-right"><i class="fa fa-file-excel-o"></i>Ekspor ke Excel</a>
+				</div>
+
+				<a href="tambah-surat-keluar.html" class="btn-circled add-small"><img src="assets/img/plus.svg" width="40%"></a>
+
+			</div>
+
+			<br>
+			<br>
+
+			<div class="table-responsive">
+
+				<table class="table table-hover table-bordered">
+
+					<thead>
+						<tr>
+							<th>#ID</th>
+							<th>Tanggal Keluar</th>
+							<th>Nomor Surat</th>
+							<th>Tujuan</th>
+							<th>Lemari Penyimpanan</th>
+							<th>Rak Lemari</th>
+						</tr>
+					</thead>
+
+					<tbody>
+
+						<tr style="cursor: pointer" data-toggle="modal" data-target="#detail-sm" data-id="#23412" data-title="CV. Madani Teknologi" data-lemari="Lemari 1" data-rak="Rak 1" data-img="assets/img/arsip/dok-1.png">
+							<td>#23412</td>
+							<td>18-3-2016</td>
+							<td>A01/M/12/5</td>
+							<td>CV. Madani Teknologi</td>
+							<td>Lemari 1</td>
+							<td>Rak 1</td>
+						</tr>
+
+						<tr style="cursor: pointer" data-toggle="modal" data-target="#detail-sm" data-id="#23412" data-title="CV. Madani Teknologi" data-lemari="Lemari 1" data-rak="Rak 1" data-img="assets/img/arsip/dok-1.png">
+							<td>#23412</td>
+							<td>18-3-2016</td>
+							<td>A01/M/12/5</td>
+							<td>CV. Madani Teknologi</td>
+							<td>Lemari 1</td>
+							<td>Rak 1</td>
+						</tr>
+
+						<tr style="cursor: pointer" data-toggle="modal" data-target="#detail-sm" data-id="#23412" data-title="CV. Madani Teknologi" data-lemari="Lemari 1" data-rak="Rak 1" data-img="assets/img/arsip/dok-1.png">
+							<td>#23412</td>
+							<td>18-3-2016</td>
+							<td>A01/M/12/5</td>
+							<td>CV. Madani Teknologi</td>
+							<td>Lemari 1</td>
+							<td>Rak 1</td>
+						</tr>
+
+						<tr style="cursor: pointer" data-toggle="modal" data-target="#detail-sm" data-id="#23412" data-title="CV. Madani Teknologi" data-lemari="Lemari 1" data-rak="Rak 1" data-img="assets/img/arsip/dok-1.png">
+							<td>#23412</td>
+							<td>18-3-2016</td>
+							<td>A01/M/12/5</td>
+							<td>CV. Madani Teknologi</td>
+							<td>Lemari 1</td>
+							<td>Rak 1</td>
+						</tr>
+
+						<tr style="cursor: pointer" data-toggle="modal" data-target="#detail-sm" data-id="#23412" data-title="CV. Madani Teknologi" data-lemari="Lemari 1" data-rak="Rak 1" data-img="assets/img/arsip/dok-1.png">
+							<td>#23412</td>
+							<td>18-3-2016</td>
+							<td>A01/M/12/5</td>
+							<td>CV. Madani Teknologi</td>
+							<td>Lemari 1</td>
+							<td>Rak 1</td>
+						</tr>
+
+					</tbody>
+
+				</table>
+
+			</div>
+
+			<center>
+				<div class="pagination">
+					<ul>
+						<!-- <li><a href="">Sebelumnya</a></li> -->
+						<li><a href="" class="actived">1</a></li>
+						<li><a href="">2</a></li>
+						<li><a href="">3</a></li>
+						<li><a href="">4</a></li>
+						<li><a href="">5</a></li>
+						<li>&nbsp;&nbsp;...&nbsp;&nbsp;</li>
+						<li><a href="">10</a></li>
+						<!-- <li><a href="">Selanjutnya</a></li> -->
+					</ul>
+				</div>
+			</center>
+
+		</section>
+
+	</div> <!-- #body -->
+
+	<footer class="container">
+		<span>© Copyright 2014 <a href="http://media-sakti.com/" target="_blank"><b>Media-Sakti</b></a></span>
+		<button class="pull-right go-up"><i class="fa fa-angle-up"></i></button>
+	</footer>
+
+</div> <!-- #container -->
+
+
+<!-- Large modal -->
+<div id="detail-sm" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title">Surat untuk <b id="title"></b></h4>
+			</div>
+
+			<div class="modal-body">
+				<br>
+				<center>
+					<b id="id" style="font-size: 18px;"></b><br>
+					<b>Tempat Penyimpanan</b> : Di <b id="lemari" style="font-size: 18px;"></b> pada <b id="rak" style="font-size: 18px;"></b>
+				</center>
+				<br>
+				<img id="img" src="assets/img/arsip/dok-1.png" width="100%">
+				<!-- <object class="object-circled" width="100%" height="500px" data="assets/img/arsip/dok-2.pdf#view=FitH" type="application/pdf"></object> -->
+			</div>
+
+			<div class="modal-footer">
+				<a href="sunting-surat-keluar.html" class="btn btn-warning pull-left">Sunting</a>
+				<a href="hapus-surat-keluar.html" class="btn btn-danger pull-left">Hapus</a>
+				<a href="surat-keluar-detail.html" class="btn btn-primary">Selengkapnya</a>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+	<script src="assets/js/kotakarsip.js"></script>
+	<script src="assets/js/scrolltobyspeed.jquery.js"></script>
+
+</body>
+
+</html>
