@@ -132,26 +132,20 @@
 					
 					<input type="text" name="" placeholder="Perihal">
 
-					<select name="lemari" placeholder="Lemari">
-						<option value="">Pilih Lemari</option>
-						<option value="Lemari 1">Lemari 1</option>
-						<option value="Lemari 2">Lemari 2</option>
-					</select>
-
 					<select name="rak" placeholder="Rak">
 						<option value="">Pilih Rak</option>
 						<option value="Rak 1">Rak 1</option>
 						<option value="Rak 2">Rak 2</option>
 					</select>
-				</div>
-
-				<div class="col-md-6">
-					<textarea name="" rows="5" placeholder="Keterangan"></textarea>
 					
 					<select name="disposisi" multiple="multiple" placeholder="Disposisi" onchange="console.log($(this).children(':selected').length)" class="testsel">
 						<option value="Direktur">Direktur</option>
 						<option value="Sekretaris">Sekretaris</option>
 					</select>
+				</div>
+
+				<div class="col-md-6">
+					<textarea name="" rows="5" placeholder="Keterangan"></textarea>
 
 					<br>
 					<br>

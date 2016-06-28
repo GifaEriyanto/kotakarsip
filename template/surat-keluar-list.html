@@ -119,17 +119,9 @@
 		<section class="container main-section">
 
 			<form action="" class="form-custom row">
-				
-				<div class="col-md-2">
-					<select name="lemari" multiple="multiple" placeholder="Pilih Lemari" onchange="console.log($(this).children(':selected').length)" class="testsel">
-						<option value="Lemari 1">Lemari 1</option>
-						<option value="Lemari 2">Lemari 2</option>
-						<option value="Lemari 3">Lemari 3</option>
-					</select>
-				</div>
 
 				<div class="col-md-2">
-					<select name="rak" multiple="multiple" placeholder="Pilih Rak" onchange="console.log($(this).children(':selected').length)" class="testsel" disabled>
+					<select name="rak" multiple="multiple" placeholder="Pilih Rak" onchange="console.log($(this).children(':selected').length)" class="testsel">
 						<option value="Rak 1">Rak 1</option>
 						<option value="Rak 2">Rak 2</option>
 						<option value="Rak 3">Rak 3</option>
@@ -140,7 +132,7 @@
 					<input type="text" id="rangePicker" placeholder="Rentang Waktu" readonly>
 				</div>
 
-				<div class="col-md-4">
+				<div class="col-md-6">
 					<input type="text" placeholder="Pencarian">
 					<button class="btn-search"><i class="fa fa-search"></i></button>
 				</div>
@@ -190,56 +182,56 @@
 							<th>Tanggal Keluar</th>
 							<th>Nomor Surat</th>
 							<th>Tujuan</th>
-							<th>Lemari Penyimpanan</th>
-							<th>Rak Lemari</th>
+							<th>Perihal</th>
+							<th>Rak</th>
 						</tr>
 					</thead>
 
 					<tbody>
 
-						<tr style="cursor: pointer" data-toggle="modal" data-target="#detail-sm" data-id="#23412" data-title="CV. Madani Teknologi" data-lemari="Lemari 1" data-rak="Rak 1" data-img="assets/img/arsip/dok-1.png">
+						<tr style="cursor: pointer" data-toggle="modal" data-target="#detail-sm" data-id="#23412" data-title="CV. Madani Teknologi" data-rak="2911" data-img="assets/img/arsip/dok-1.png">
 							<td>#23412</td>
 							<td>18-3-2016</td>
 							<td>A01/M/12/5</td>
 							<td>CV. Madani Teknologi</td>
-							<td>Lemari 1</td>
-							<td>Rak 1</td>
+							<td>Lorem ipsum dolor.</td>
+							<td>2911</td>
 						</tr>
 
-						<tr style="cursor: pointer" data-toggle="modal" data-target="#detail-sm" data-id="#23412" data-title="CV. Madani Teknologi" data-lemari="Lemari 1" data-rak="Rak 1" data-img="assets/img/arsip/dok-1.png">
+						<tr style="cursor: pointer" data-toggle="modal" data-target="#detail-sm" data-id="#23412" data-title="CV. Madani Teknologi" data-rak="2911" data-img="assets/img/arsip/dok-1.png">
 							<td>#23412</td>
 							<td>18-3-2016</td>
 							<td>A01/M/12/5</td>
 							<td>CV. Madani Teknologi</td>
-							<td>Lemari 1</td>
-							<td>Rak 1</td>
+							<td>Lorem ipsum dolor.</td>
+							<td>2911</td>
 						</tr>
 
-						<tr style="cursor: pointer" data-toggle="modal" data-target="#detail-sm" data-id="#23412" data-title="CV. Madani Teknologi" data-lemari="Lemari 1" data-rak="Rak 1" data-img="assets/img/arsip/dok-1.png">
+						<tr style="cursor: pointer" data-toggle="modal" data-target="#detail-sm" data-id="#23412" data-title="CV. Madani Teknologi" data-rak="2911" data-img="assets/img/arsip/dok-1.png">
 							<td>#23412</td>
 							<td>18-3-2016</td>
 							<td>A01/M/12/5</td>
 							<td>CV. Madani Teknologi</td>
-							<td>Lemari 1</td>
-							<td>Rak 1</td>
+							<td>Lorem ipsum dolor.</td>
+							<td>2911</td>
 						</tr>
 
-						<tr style="cursor: pointer" data-toggle="modal" data-target="#detail-sm" data-id="#23412" data-title="CV. Madani Teknologi" data-lemari="Lemari 1" data-rak="Rak 1" data-img="assets/img/arsip/dok-1.png">
+						<tr style="cursor: pointer" data-toggle="modal" data-target="#detail-sm" data-id="#23412" data-title="CV. Madani Teknologi" data-rak="2911" data-img="assets/img/arsip/dok-1.png">
 							<td>#23412</td>
 							<td>18-3-2016</td>
 							<td>A01/M/12/5</td>
 							<td>CV. Madani Teknologi</td>
-							<td>Lemari 1</td>
-							<td>Rak 1</td>
+							<td>Lorem ipsum dolor.</td>
+							<td>2911</td>
 						</tr>
 
-						<tr style="cursor: pointer" data-toggle="modal" data-target="#detail-sm" data-id="#23412" data-title="CV. Madani Teknologi" data-lemari="Lemari 1" data-rak="Rak 1" data-img="assets/img/arsip/dok-1.png">
+						<tr style="cursor: pointer" data-toggle="modal" data-target="#detail-sm" data-id="#23412" data-title="CV. Madani Teknologi" data-rak="2911" data-img="assets/img/arsip/dok-1.png">
 							<td>#23412</td>
 							<td>18-3-2016</td>
 							<td>A01/M/12/5</td>
 							<td>CV. Madani Teknologi</td>
-							<td>Lemari 1</td>
-							<td>Rak 1</td>
+							<td>Lorem ipsum dolor.</td>
+							<td>2911</td>
 						</tr>
 
 					</tbody>
@@ -290,7 +282,7 @@
 				<br>
 				<center>
 					<b id="id" style="font-size: 18px;"></b><br>
-					<b>Tempat Penyimpanan</b> : Di <b id="lemari" style="font-size: 18px;"></b> pada <b id="rak" style="font-size: 18px;"></b>
+					<b>Tempat Penyimpanan</b> : Rak <b id="rak" style="font-size: 18px;"></b>
 				</center>
 				<br>
 				<img id="img" src="assets/img/arsip/dok-1.png" width="100%">
