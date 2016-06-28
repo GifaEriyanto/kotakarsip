@@ -12,7 +12,12 @@ class TableAppMasterDispotition extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('app_master_dispotition', function(Blueprint $table) {
+            $table->increments('id');
+            $table->bigInteger('id_inbox');
+            $table->string('dispotition_name', 100);
+            $table->string('dispotition_position', 40);
+        });
     }
 
     /**

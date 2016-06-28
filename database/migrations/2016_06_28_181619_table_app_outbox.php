@@ -12,7 +12,18 @@ class TableAppOutbox extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('app_outbox', function(Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->integer('id_user');
+            $table->integer('id_rack');
+            $table->date('outbox_date');
+            $table->string('inbox_for', 100);
+            $table->string('inbox_number', 50);
+            $table->string('inbox_title', 250);
+            $table->text('inbox_desc');
+            $table->text('inbox_file');
+            $table->timestamps();
+        });
     }
 
     /**

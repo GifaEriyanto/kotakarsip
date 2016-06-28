@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class TableAppDispotition extends Migration
+class TableAppNotificationsRead extends Migration
 {
     /**
      * Run the migrations.
@@ -12,12 +12,10 @@ class TableAppDispotition extends Migration
      */
     public function up()
     {
-       Schema::create('app_dispotition', function(Blueprint $table) {
-        $table->increments('id');
-        $table->bigInteger('id_inbox');
-        $table->integer('id_master_dispotition');
-        $table->timestamps();
-       });
+        Schema::create('app_notifications_read', function(Blueprint $table) {
+            $table->bigIncrements('id_notification');
+            $table->integer('id_user');
+        });
     }
 
     /**
